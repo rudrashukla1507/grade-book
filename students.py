@@ -79,4 +79,4 @@ while True:
         break
 
     else:
-        print("Choose right one!")
+        print("See you soon!")

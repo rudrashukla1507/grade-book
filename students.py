@@ -75,8 +75,8 @@ while True:
                 
             print(f"{top_student.name} is top")
     elif choice == 5:
-        print("Goodbye!")
+        print("See you soon!")
         break
 
     else:
-        print("See you soon!")
+        print("Choose right one!")

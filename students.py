@@ -1,4 +1,7 @@
+from helpers import get_number
 import json
+from datetime import date
+
 
 class Student:
     def __init__(self, name, marks):
@@ -28,13 +31,6 @@ def load_students(filename):
         s = Student(d["name"], d["marks"])
         students.append(s)
     return students
-
-def get_number(prompt):
-    while True:
-        try:
-            return(int(input(prompt)))
-        except ValueError:
-            print("Please Enter a valid number!")
 
 students = load_students("students.json")
 
@@ -75,8 +71,8 @@ while True:
                 
             print(f"{top_student.name} is top")
     elif choice == 5:
-        print("See you soon!")
+        print(f"{date.today()}\nSee you soon!")
         break
 
     else:
-        print("Choose right one!")
+        print("Choose right one!\n")
